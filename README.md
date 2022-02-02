@@ -25,8 +25,11 @@ is preferred:
 - Make the common changes that should be present in both `main` and `solution`
   in your `<feature>-main` branch
 - Merge `<feature>-main` into `<feature>-solution`
-- Assert that only the changes you want carried over were applied (via git log
-  or before the merge)
+- Make the changes that should only be present in `solution` in your
+  `<feature>-solution` branch
+- Before merging, use `git log` to verify that changes to the solution code were
+  only applied to the `solution` branch, and all other changes were applied to
+  both branches
 - Merge the changes from the `<feature>-` branches into their respective
   branches (this may happen via PR on GitHub if you need your changes reviewed)
 
